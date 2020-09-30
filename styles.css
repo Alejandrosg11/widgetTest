@@ -1,0 +1,236 @@
+body {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    padding: 30px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* black */
+    color: #4A4A4A;
+}
+
+.content {
+    width: 85%;
+}
+
+.container-2f {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+section.section-faq {
+    margin-bottom: 80px;
+}
+
+.control-icon {
+    fill: #198C9B;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
+  .control-icon-close {
+    display: none;
+  }
+  
+  details[open] .control-icon-close {
+    display: initial;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  details[open] .control-icon-expand {
+    display: none;
+  }
+  
+body, input, select, textarea {
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  background-color: #ddd;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  margin: 0;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+html, body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  background: #F2F5F8;
+  font-family: 'Raleway', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  padding: 0;
+  height: 60px;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+  width: 100%;
+}
+
+section {
+  background: #F2F5F8;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+section p {
+  padding: 0 20px;
+}
+
+
+/* Styles medias */
+@media screen and (max-width: 768px) {
+  section {
+    max-width: 1024px;
+    margin: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+.faq-list {
+  list-style: none;
+}
+
+/*Accordion*/
+details {
+  width: 100%;
+  min-height: 5px;
+  padding: 15px 20px 15px 15px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+  padding-left: 0;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.control-icon {
+  fill: #198C9B;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+details[open] summary:hover::after {
+  -webkit-animation: pulse 1s ease;
+          animation: pulse 1s ease;
+}
