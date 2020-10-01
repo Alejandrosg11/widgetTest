@@ -6,10 +6,7 @@
     <title>Document</title>
 </head>
 <script>
-    function goBack() {
-        window.history.back();
-    }
-    goBack();
+    window.webkit.messageHandlers.backHomePage.postMessage("success");
 </script>
 <body>
     
